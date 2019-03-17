@@ -1,0 +1,1 @@
+npm run build && scp distributions/* root@150.95.109.108:/nhatbao24.com/webpush/

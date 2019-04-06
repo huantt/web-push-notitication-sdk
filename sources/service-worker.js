@@ -32,7 +32,7 @@ self.addEventListener('push', function (event) {
         options['silent'] = silent
     }
 
-    return self.registration.showNotification(options.title, options);
+    event.waitUntil(self.registration.showNotification(options.title, options));
 });
 
 self.addEventListener('notificationclick', function (event) {
